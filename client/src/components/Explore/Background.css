@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.imgg{
+    width: 99vw;
+    height: 60vh;
+    border-radius: 5px;
+    
+}
+.heading11{
+    display: flex;
+    font-size:  50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -335px;
+    font-family: 'EB Garamond', serif;
+
+}
+
+@media(max-width : 600px)
+{
+    .heading11{
+        font-size: 25px;
+        margin-top: -250px;
+    }
+}
+
+
