@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react'
 import Button from "@material-ui/core/Button";
 import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
-const Note=(props)=>{
+const Note=(props)=>
+{
+    
 
     const deleteNote=()=>{
          props.deleteItem(props.id);
