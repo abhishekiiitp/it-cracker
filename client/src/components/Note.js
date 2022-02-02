@@ -48,12 +48,55 @@ const Note=(props)=>
 
     }
 
-    const dislike=()=>{
+    const[like,setlike]=useState(0);
+    const[dislike,setdislike]=useState(0);
+
+    const[likeactive,setlikeactive]=useState(false);
+    const[dislikeactive,setdislikeactive]=useState(false);
+
+
+
+    function likef()
+    {
+        if(likeactive)
+        {
+            setlikeactive(false)
+            setlike(like-1)
+        }
+        else
+        {
+            setlikeactive(true)
+            setlike(like+1)
+            if(dislikeactive)
+            {
+                setdislikeactive(false)
+                setlike(like+1)
+                setdislike(dislike-1)
+            }
+        }
 
     }
 
-    const like=()=>{
-        
+    function dislikef()
+    {
+        if(dislikeactive)
+        {
+            setdislikeactive(false)
+            setdislike(dislike-1)
+        }
+        else
+        {
+            setdislikeactive(true)
+            setdislike(dislike+1)
+            if(likeactive)
+            {
+                setlikeactive(false)
+                setdislike(dislike+1)
+                setlike(like-1)
+            }
+
+        }
+
     }
     return(
         <>
@@ -66,13 +109,13 @@ const Note=(props)=>
                     
                 </button>
 
-                <button className="note_btn" onClick={dislike}>
-                    <ThumbDownAltOutlinedIcon className="deleteIcon"/>
+                <button className="note_btn" onClick={dislikef}>
+                    <ThumbDownAltOutlinedIcon className="deleteIcon"/> {dislike}
                     
                 </button>
 
-                <button className="note_btn" onClick={like}>
-                    <ThumbUpAltOutlinedIcon className="deleteIcon"/>
+                <button className="note_btn" onClick={likef}>
+                    <ThumbUpAltOutlinedIcon className="deleteIcon"/> {like}
                     
                 </button>
 
