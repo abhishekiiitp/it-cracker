@@ -61,7 +61,6 @@ const Card=(props)=>
                    <Note 
                    key={index}
                    id={index}
-                //    name={userName}
                    content={val.content}
                    deleteItem={onDelete}
                    />
