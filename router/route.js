@@ -176,6 +176,16 @@ router.post('/contact', authenticate, async (req, res) => {
     }
 
 });
+
+//discuss ka page(comment section)
+
+router.post('/discuss',(req,res)=>
+{
+    console.log("this is discuss 1");
+     res.send(req.rootUser);
+    
+ });
+ 
 // Logout  ka page 
 router.get('/logout', (req, res) => {
     // console.log(`Hello my Logout Page`);

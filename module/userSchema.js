@@ -47,6 +47,19 @@ const userSchema=new mongoose.Schema({
             }
         }
     ], 
+
+    comment:[
+        {
+            name:{
+                type:String,
+                required:true
+            },
+            content:{
+                type:String,
+                required:true
+            }
+        }
+    ],
     tokens:[
         {
             token:{

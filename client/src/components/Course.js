@@ -1,6 +1,7 @@
 import React, {useEffect, useState}  from 'react'
 import { useHistory } from "react-router-dom";
 import Card from './Card';
+import Footer from "./footer"
 import html_q from '../components/Quiz/html_q'
 import c1 from '../images/c1.jpg'
 import c2 from '../images/c2.jpg'
@@ -119,6 +120,8 @@ const Course=()=>{
       <html_q />
     </div>
   </div>
+
+  <Footer/>
     </>
   )
 }

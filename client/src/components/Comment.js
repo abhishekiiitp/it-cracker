@@ -18,7 +18,7 @@ const Comment=(props)=>{
             });
 
             const data = await res.json();
-            console.log(data);
+           // console.log(data);
             setUserData({ ...userData,name:data.name,email:data.email,phone:data.phone,message:data.message});
 
             if (!res.status === 200) {
@@ -53,6 +53,9 @@ const Comment=(props)=>{
         })
         //console.log(comment);
     }
+
+    
+
     const addComment=()=>{
            props.passComment(comment);
            setComment({
@@ -64,7 +67,7 @@ const Comment=(props)=>{
         <>
         <StylesProvider injectFirst>
             <div className="main_note">
-                <form className="comment_form">
+                <form method="POST" className="comment_form">
                     <input className="comment_input" type="text" name="name" value={userData.name} onChange={inputEvent} placeholder="Enter your name" autoComplete="off" />
 
                     <textarea className="comment_textarea" rows='' column='' name="content" value={comment.content} onChange={inputEvent} placeholder="write ur query here...."/>

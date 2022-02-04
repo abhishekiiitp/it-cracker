@@ -2,6 +2,7 @@ import React, {useEffect, useState}  from 'react'
 import abhishekpic from "../images/abhishek.jpeg";
 import Abouthead from './Abouthead';
 import { useHistory } from "react-router-dom";
+import Footer from "./footer"
 const About = () => {
     const history = useHistory();
     const [userData, setUserData] = useState({});
@@ -137,6 +138,8 @@ const About = () => {
 
                 </form>
            </div>
+
+           <Footer/>
         </>
     )
 }

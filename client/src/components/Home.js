@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import Crousal from './Crousal'
+import Crousal from './Crousal';
+import Footer from "./footer"
 const Home = () => {
     const [userName, setUserName] = useState('');
     const [show, setShow] = useState(false);
@@ -39,7 +40,10 @@ const Home = () => {
                     <h5 >Check our curated list of full-stack, data structures & software architecture interview questions and answers for developers</h5>
                 </div>
             </div>
+
             
+            <Footer/>
+
         </>
     )
 }

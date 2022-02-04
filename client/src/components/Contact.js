@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-
+import Footer from "./footer"
 const Contact = () => {
 
     
@@ -162,6 +162,8 @@ const Contact = () => {
                      </div>
                  </div>   
         </div>
+
+        <Footer />
         </>
     )
 }
