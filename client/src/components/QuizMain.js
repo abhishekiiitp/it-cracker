@@ -203,6 +203,7 @@ export default class QuizMain extends Component{
 
               <h1> You have completed the quiz !! </h1>
               <p>Your score is :{score} of {Object.keys(questions).length }</p>
+              
               <p> Thank you !!  </p>
             </div>
         )

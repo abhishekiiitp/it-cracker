@@ -749,7 +749,7 @@ label.valid:after {
 
 .home-page {
   /* width: 100vw; */
-  height: 90vh;
+  height: 40vh;
   background-image: linear-gradient(90deg, #ecf0ff 50%, #fff 50%);
   display: flex;
   justify-content: center;

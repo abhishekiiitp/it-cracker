@@ -25,11 +25,16 @@ const Answer=(props)=>{
         </ul>
         <div>
             {
+                
+
                 props.correctAnswer?
                 'Correct Answer!':
                 props.clickedAnswer?
                 'Incorrect Answer':''
+
+                
             }
+          
         </div>
         </>
     )

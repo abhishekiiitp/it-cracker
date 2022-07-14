@@ -50,14 +50,18 @@ const userSchema=new mongoose.Schema({
 
     comment:[
         {
-            name:{
+            name:
+            {
                 type:String,
                 required:true
             },
-            content:{
+            content:
+            {
                 type:String,
-                required:true
+                required:true,
+                trim:true
             }
+            
         }
     ],
     tokens:[

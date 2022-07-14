@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import SendIcon from '@material-ui/icons/Send';
 const Comment=(props)=>{
 
-    const [userData, setUserData] = useState({name:"",email:"",phone:"",message:""});
+    const [userData, setUserData] = useState({name:"",content:""});
 
     const getuserData = async () => {
         try {
@@ -19,7 +19,7 @@ const Comment=(props)=>{
 
             const data = await res.json();
            // console.log(data);
-            setUserData({ ...userData,name:data.name,email:data.email,phone:data.phone,message:data.message});
+            setUserData({ ...userData,name:data.name,content:data.content});
 
             if (!res.status === 200) {
                 const error = new Error(res.error);
@@ -35,6 +35,42 @@ const Comment=(props)=>{
     useEffect(() => {
         getuserData();
     }, []);
+
+    // we are storing data in states 
+
+    // const handleInputs = (e) => {
+    //     const name = e.target.name;
+    //     const value = e.target.value;
+
+    //     setUserData({ ...userData, [name]:value });
+    // }   
+    //  send the data to backend 
+
+    const comment_form = async (e) => {
+        e.preventDefault();
+
+        const { name, content } = userData;
+
+        const res = await fetch('/discuss', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name, content
+            })
+        });
+
+        const data = await res.json();
+
+        if (!data) {
+            console.log("message not send ");
+        } else {
+            alert("Message Send");
+            setUserData({ ...userData, comment: "" });
+        }
+
+    }
 
     const[comment,setComment]=useState({
         name:"",
