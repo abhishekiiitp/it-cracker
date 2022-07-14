@@ -54,7 +54,7 @@ const About = () => {
                          <div className="col-md-6">
                             <div className="profile-head">
                                 <h5>Abhishek kumar</h5>
-                                <h6>Sophomore</h6>
+
                                 <h6>Indian Institute Of Information Technology, Pune</h6>
                                 <ul className="nav nav-tabs" role="tablist">
                                     <li className="nav-item">
@@ -74,12 +74,12 @@ const About = () => {
                             <div className="profile-work">
                                 <p> WORK LINK</p>
                                 
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Instagram</a> <br />
+                                <a href="https://www.instagram.com/_abhishek___.18/" target="_abhishek">Instagram</a> <br />
                                 
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Github</a> <br />
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">Web Developer</a> <br />
+                                <a href="https://github.com/abhishekiiitp" target="_thapa">Github</a> <br />
+                                <a href="https://github.com/abhishekiiitp" target="_thapa">Web Developer</a> <br />
                                 
-                                <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_thapa">LinkedIn</a> <br />
+                                <a href="https://www.linkedin.com/in/abhishek-kumar-051853206" target="_thapa">LinkedIn</a> <br />
                                 
                                 
                             </div>

@@ -12,37 +12,19 @@ const Footer=()=>{
                         <div className="col-12 col-lg-10 mx-auto">
                             <div className="row">
                                 <div className="col-6 col-lg-3">
-                                    <h2>Resources</h2>
+                                    <h2>For candidate</h2>
                                     <ul>
                                         <li>
-                                            <a href="#"> About </a>
+                                            <a href="/course"> Course </a>
                                         </li>
                                         <li>
-                                            <a href="#"> About </a>
+                                            <a href="/course"> Explore </a>
                                         </li>
                                         <li>
-                                            <a href="#"> About </a>
+                                            <a href="/course"> Quiz </a>
                                         </li>
                                         <li>
-                                            <a href="#"> About </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className="col-6 col-lg-3">
-                                    <h2>Support</h2>
-                                    <ul>
-                                        <li>
-                                            <a href="#"> About </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> About </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> About </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> About </a>
+                                            <a href="/discuss"> Discussion </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -51,17 +33,33 @@ const Footer=()=>{
                                     <h2>Services</h2>
                                     <ul>
                                         <li>
-                                            <a href="#"> About </a>
+                                            <a href="/about"> About us </a>
                                         </li>
                                         <li>
-                                            <a href="#"> About </a>
+                                            <a href="/contact"> Contact us </a>
                                         </li>
                                         <li>
-                                            <a href="#"> About </a>
+                                            <a href="/discuss"> Discussion </a>
                                         </li>
                                         <li>
-                                            <a href="#"> About </a>
+                                            <a href="/course"> Courses </a>
                                         </li>
+                                    </ul>
+                                </div>
+
+                                <div className="col-6 col-lg-3">
+                                    <h2>Legal</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="#"> Site </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Privacy  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Terms and Condition </a>
+                                        </li>
+                                        
                                     </ul>
                                 </div>
 
