@@ -86,6 +86,8 @@ import Django_q from '../src/components/Quiz/django_q';
 import Dataanalysis_q from '../src/components/Quiz/dataanalysis_q';
 import Matlab_q from '../src/components/Quiz/matlab_q';
 import Cybersecurity_q from '../src/components/Quiz/cybersecurity_q';
+
+import Dashboard from './components/Dashboard/Dashboard'
 // we create a contextAPI 
 export const UserContext = createContext();
 
@@ -96,9 +98,12 @@ const Routing = () => {
   return (
     <>
        <Switch>
-      <Route exact path="/">
-        <Home />
+       <Route exact path="/">
+        <Dashboard />
       </Route>
+      {/* <Route exact path="/">
+        <Home />
+      </Route> */}
 
       <Route path="/about">
         <About />
