@@ -87,7 +87,8 @@ import Dataanalysis_q from '../src/components/Quiz/dataanalysis_q';
 import Matlab_q from '../src/components/Quiz/matlab_q';
 import Cybersecurity_q from '../src/components/Quiz/cybersecurity_q';
 
-import Dashboard from './components/Dashboard/Dashboard'
+import Dashboard from './components/Dashboard/Dashboard';
+import AdminHome from './components/Admin/Home'
 // we create a contextAPI 
 export const UserContext = createContext();
 
@@ -99,21 +100,30 @@ const Routing = () => {
     <>
        <Switch>
        <Route exact path="/">
-        <Dashboard />
-      </Route>
-      {/* <Route exact path="/">
+       <Navbar />
         <Home />
+      </Route>
+      {/* <Route exact path="/user/home">
+        <Navbar />
+        <Home />
+      </Route>
+
+      <Route exact path="/admin/home">
+        <AdminHome />
       </Route> */}
 
       <Route path="/about">
+      <Navbar />
         <About />
       </Route>
 
       <Route path="/discuss">
+        <Navbar />
         <Discussion />
       </Route>
 
       <Route path="/contact">
+        <Navbar />
         <Contact />
       </Route>
 
@@ -389,7 +399,7 @@ const App = () => {
    
       <UserContext.Provider value={{state, dispatch}}>
         
-        <Navbar />
+        
         <Routing />
 
       </UserContext.Provider>

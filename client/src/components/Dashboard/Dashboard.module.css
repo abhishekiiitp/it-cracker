@@ -1,0 +1,59 @@
+.dashboard_cont{
+    display: flex;
+    flex-direction: row;
+}
+.left_cont{
+    width: 50%;
+    background-color: #FFC0CB;
+    height: 650px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+}
+.right_cont{
+    width: 50%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+.welcome_text{
+    margin-left: 15%;
+    margin-top: 20%;
+    font-size: 32px;
+    font-weight: bold;
+}
+.below_text{
+    margin-left: -58%;
+    margin-top: 65%;
+    font-size: 32px;
+    font-weight: bold;
+}
+.crack{
+    margin-left: -26%;
+    margin-top: 27%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.admin_box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #F5F5F5;
+    height: 208px;
+    margin-top: 10%;
+    margin-left: 12%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.user_box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #F5F5F5;
+    height: 208px;
+    margin-top: 15%;
+    margin-left: 38%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
